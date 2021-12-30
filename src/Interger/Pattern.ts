@@ -58,7 +58,7 @@ const areTwoNumbers = (history: History<Integer>) => {
 const areTooManySameNumbers = (history: History<Integer>) => {
   const values = getValues(history, -10)
   const last = values.slice(-1).pop()!
-  return values.slice(0, -1).filter((v) => v === last).length < 4
+  return values.slice(0, -1).filter((v) => v === last).length === 4
 }
 
 const Pattern = {
